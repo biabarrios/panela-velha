@@ -173,18 +173,6 @@ const Product = () => {
                     .map((data, index) => (
                       <TableRow>
                         <TableCell style={{ flex: 2 }}>
-                          <Tooltip title="Editar">
-                            <IconButton
-                              style={{ padding: "0.25rem" }}
-                              onClick={() => navigate("/", { state: d })}
-                              disabled={isLoading}
-                            >
-                              <EditIcon
-                                {...(!isLoading && { color: "info" })}
-                              />
-                            </IconButton>
-                          </Tooltip>
-
                           <Tooltip title="Excluir">
                             <IconButton
                               style={{ padding: "0.25rem" }}
